@@ -2,6 +2,7 @@
 ---
 
 ## 📦 requirements.txt
-```txt
-scikit-learn
-numpy
+
+ python-telegram-bot==20.4
+spacy==3.6.0
+pip install -r requirements.txt

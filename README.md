@@ -22,3 +22,55 @@ Cannot understand queries outside predefined intents.
 Misinterprets complex or ambiguous questions.
 
 May fail to respond if a student uses slang or very casual language outside of its training examples.
+
+Setup Instructions
+
+Clone the repository
+
+git clone <your-repo-url>
+cd telegram-campus-bot
+
+
+Create and activate a virtual environment
+
+python -m venv venv
+# Linux / Mac
+source venv/bin/activate
+# Windows
+venv\Scripts\activate
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Download Spacy language model
+
+python -m spacy download en_core_web_sm
+
+
+Run the bot
+
+python bot.py
+
+
+Interact with the bot on Telegram
+
+Start a chat with your bot using its token.
+
+Try sample queries:
+
+“When is the library open?”
+
+“Who can I contact for IT support?”
+
+“What lectures are today?”
+
+Verifying Functionality
+
+Send queries matching the intents listed in intents.json.
+
+Verify that the bot responds accurately.
+
+Test unexpected input to see fallback behavior and logging.
